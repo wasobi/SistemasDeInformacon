@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<title>Eliminar cuenta</title>
+	</head>
+
+<body>
+	<div class="container text-center">
+		<div class="jumbotron">
+		   <h2 class="display-3">Eliminar cuenta</h2>
+		   <p class="lead">Confirma el borrado de la cuenta con el login y la contraseña</p>
+		   <form name="delete-account" method="POST">
+			  <!-- Might be unnecessary, since we're already singed in. Probably. -->
+				<div class="form-row align-items-center">
+					<div class="col-sm-5">
+						<label for="usuario" class="sr-only">Usuario:</label>
+						<input type="text" id="usuario" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Usuario">
+					</div>
+				<!-- Can't have someone delete your account because you forgot to sign out. -->
+					<div class="col-sm-5">
+						<label for="password" class="sr-only">Password:</label>
+						<input type="password" name="password" id="password" placeholder="Password" class="form-control mb-2 mb-sm-0"> 
+					</div>
+					<div class="col-auto">
+						<input type="submit" value="Borrar cuenta" class="btn btn-primary">
+					</div>				
+				</div>		  
+		   </form>
+	   </div>
+   </div>
+</body>
+
+</html>

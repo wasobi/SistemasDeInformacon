@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      
+      <title>Historial de actividad</title>
+   </head>
+
+   <body>
+      <div class="container text-center">
+         <div class="jumbotron">
+            <h2 class="display-3">Historial de actividad</h2>
+            <!-- Assuming it's a public thing like likes, dislikes, ratings and all that social web junk.
+             This also implies a privacy setting ofc, or rather, a "share my history" setting, disabled by
+             default. -->
+            <p class="lead">¿De que usuario quiere ver el historial?</p>
+            <form name="history", method="POST">
+               <div class="form-group row">
+						<label for="login" class="col-sm-2 col-form-label">Usuario</label>
+						<div class="col-sm-10">
+							<input type="text" name="login" class="form-control" id="login" placeholder="Login">
+						</div>
+					</div>
+               <div class="form-group col-sm-12">
+						<input type="submit" value="Ver historial" class="btn btn-primary">
+					</div>
+            </form>
+            <!-- If it's only for your own stuff, skip the form and place the user's history here -->
+         </div>
+      </div>
+   </body>
+
+</html>
